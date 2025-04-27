@@ -134,9 +134,7 @@ public class CrudMain {
 							contadorDeAlunos++;
 						}
 
-					}System.out.println(tamanho);
-					System.out.println(contadorDeAlunos);
-					
+					}					
 					tamanho -= quantidadeDeAlunos;
 					contadorDeAlunos = 0;
 					System.out.println();
