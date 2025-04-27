@@ -78,7 +78,7 @@ public class CrudMain {
 						break;
 					}
 
-					tamanho -= quantidadeDeAlunos;
+					
 
 					for (int i = 1; i <= tamanhoMax; i++) {
 						boolean JaTemAluno = false;
@@ -134,7 +134,10 @@ public class CrudMain {
 							contadorDeAlunos++;
 						}
 
-					}
+					}System.out.println(tamanho);
+					System.out.println(contadorDeAlunos);
+					
+					tamanho -= quantidadeDeAlunos;
 					contadorDeAlunos = 0;
 					System.out.println();
 					System.out.print("|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|");
@@ -187,6 +190,8 @@ public class CrudMain {
 
 					for (Aluno aluno : turma) {
 						aluno.DeletarTurma(turma, contadorDeAlunos, tamanho, tamanhoMax);
+						contadorDeAlunos = 0;
+						tamanho = tamanhoMax;
 						break;
 					}
 					break;

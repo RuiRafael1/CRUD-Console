@@ -140,10 +140,7 @@ public class Aluno {
 		if (resp.equals("sim")) {
 			System.out.println();
 			System.out.println("Todos os alunos foram removidos da turma.");
-			turma.removeAll(turma);
-			contadorDeAlunos = 0;
-			tamanho = tamanhoMax;
-			System.out.println();
+			turma.removeAll(turma);			
 			System.out.print("|-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=|");			
 		} else {
 			System.out.println();
